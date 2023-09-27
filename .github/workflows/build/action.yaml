@@ -32,6 +32,7 @@ runs:
       with:
         context: "{{defaultContext}}:${{ inputs.name }}"
         platforms: ${{ inputs.platforms }}
+        pull: true
         push: ${{ inputs.push == 'true' }}
         tags: ghcr.io/slaier/${{ inputs.name }}:latest
         cache-from: type=gha

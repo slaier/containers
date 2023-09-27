@@ -9,4 +9,4 @@ RUN apk add --no-cache \
 COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["openfortivpn", "-c", "/etc/openfortivpn/config"]
+CMD ["openfortivpn", "-c", "/etc/openfortivpn/config", "--pppd-accept-remote"]
